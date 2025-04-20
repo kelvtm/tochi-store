@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import HomePage from "./pages/homepage/homepage.component";
+import SignInAndSignUpPage from "./pages/signin-and-signup-page/signin-and-signup.component";
+import ShopPage from "./pages/shop/shop.component";
 
 const HatsPage = () => (
   <div>
@@ -14,7 +16,8 @@ function App() {
       <switch>
         <Routes>
           <Route exact path="/" Component={HomePage}></Route>
-          <Route path="/hats" Component={HatsPage}></Route>
+          <Route path="/shop" Component={ShopPage}></Route>
+          <Route path="/signIn" Component={SignInAndSignUpPage}></Route>
         </Routes>
       </switch>
     </div>
