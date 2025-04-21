@@ -3,6 +3,7 @@ import "./App.scss";
 import HomePage from "./pages/homepage/homepage.component";
 import SignInAndSignUpPage from "./pages/signin-and-signup-page/signin-and-signup.component";
 import ShopPage from "./pages/shop/shop.component";
+import Header from "./components/header/header.component";
 
 const HatsPage = () => (
   <div>
@@ -13,6 +14,7 @@ const HatsPage = () => (
 function App() {
   return (
     <div>
+      <Header />
       <switch>
         <Routes>
           <Route exact path="/" Component={HomePage}></Route>
