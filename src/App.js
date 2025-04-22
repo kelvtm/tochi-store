@@ -15,13 +15,12 @@ function App() {
   return (
     <div>
       <Header />
-      <switch>
-        <Routes>
-          <Route exact path="/" Component={HomePage}></Route>
-          <Route path="/shop" Component={ShopPage}></Route>
-          <Route path="/signIn" Component={SignInAndSignUpPage}></Route>
-        </Routes>
-      </switch>
+
+      <Routes>
+        <Route exact path="/" Component={HomePage}></Route>
+        <Route path="/shop" Component={ShopPage}></Route>
+        <Route path="/signIn" Component={SignInAndSignUpPage}></Route>
+      </Routes>
     </div>
   );
 }
